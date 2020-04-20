@@ -33,16 +33,16 @@ import com.example.android.system.runtimepermissions.camera.CameraPreviewFragmen
 import com.example.android.system.runtimepermissions.contacts.ContactsFragment;
 
 /**
- * Launcher Activity that demonstrates the use of runtime permissions for Android M.
+ * Launcher Activity that demonstrates（证明，展示） the use of runtime permissions for Android M.
  * It contains a summary sample description, sample log and a Fragment that calls callbacks on this
- * Activity to illustrate parts of the runtime permissions API.
+ * Activity to illustrate（阐述，举例说明） parts of the runtime permissions API.
  * <p>
  * This Activity requests permissions to access the camera ({@link android.Manifest.permission#CAMERA})
  * when the 'Show Camera' button is clicked to display the camera preview.
  * Contacts permissions (({@link android.Manifest.permission#READ_CONTACTS} and ({@link
  * android.Manifest.permission#WRITE_CONTACTS})) are requested when the 'Show and Add Contacts'
  * button is
- * clicked to display the first contact in the contacts database and to add a dummy contact
+ * clicked to display the first contact in the contacts database and to add a dummy（虚拟的） contact
  * directly to it. Permissions are verified and requested through compat helpers in the support v4
  * library, in this Activity using {@link ActivityCompat}.
  * First, permissions are checked if they have already been granted through {@link
@@ -53,7 +53,7 @@ import com.example.android.system.runtimepermissions.contacts.ContactsFragment;
  * a callback to the {@link android.support.v4.app.ActivityCompat.OnRequestPermissionsResultCallback}
  * interface.
  * <p>
- * Before requesting permissions, {@link ActivityCompat#shouldShowRequestPermissionRationale(Activity,
+ * Before requesting permissions, {@link ActivityCompat#shouldShowRequestPermissionRationale（Rationale:基本原理）(Activity,
  * String)}
  * should be called to provide the user with additional context for the use of permissions if they
  * have been denied previously.
@@ -73,7 +73,7 @@ import com.example.android.system.runtimepermissions.contacts.ContactsFragment;
  * <p>
  * (This class is based on the MainActivity used in the SimpleFragment sample template.)
  */
-public class MainActivity extends AppCompatActivity
+public class MainActivity extends AppCompatActivity                         //权限许可的定义和请求是通过compat helpers来实现的，所以此处要引入   
         implements ActivityCompat.OnRequestPermissionsResultCallback {
 
     public static final String TAG = "MainActivity";
